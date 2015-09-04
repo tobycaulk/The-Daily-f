@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	div.container-fluid
+		div.row
+			h1#main-heading.text-center #{username}'s Profile
+		hr.horizontal-divider
+	div.container-fluid
+		div.row
+			img(src= profilePicture, width="100px", height="100px")
+		div.row
+			h2#lg-text #{points} f's

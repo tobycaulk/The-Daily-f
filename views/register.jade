@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	div.container-fluid
+		div.row
+			h1#main-heading.text-center Register
+		hr.horizontal-divider
+	div.container-fluid
+		form#register(name="formRegister", action="/register/register", method="post")
+			div.col-md-12
+				div.row
+					div.input-group.input-group-lg
+						input.form-control.input-textbox(name="email", type="text", placeholder="Email")
+				br
+				div.row
+					div.input-group.input-group-lg
+						input.form-control.input-textbox(name="username", type="text", placeholder="Username")
+				br
+				div.row
+					div.input-group.input-group-lg
+						input.form-control.input-textbox(name="password", type="password", placeholder="Password")
+				br
+				div.row
+					div.input-group.input-group-lg
+						input.form-control.input-textbox(name="profilePicture", type="text", placeholder="Profile Picture Address")
+				br
+				div.row
+					button#submitLogin.btn.btn-primary(type="submit") Register

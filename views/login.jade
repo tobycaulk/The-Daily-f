@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	div.container-fluid
+		div.row
+			h1#main-heading.text-center Login
+		hr.horizontal-divider
+	div.container-fluid
+		form#login(name="formLogin", action="/login/login", method="post")
+			div.col-md-12
+				div.row
+					div.input-group.input-group-lg
+						input.form-control.input-textbox(name="username", type="text", placeholder="Username")
+				br
+				div.row
+					div.input-group.input-group-lg
+						input.form-control.input-textbox(name="password", type="password", placeholder="Password")
+				br
+				div.row
+					button#submitLogin.btn.btn-primary(type="submit") Login
+					a(href="/register" style="font-size: 16px; margin-left: 2em") Need a profile?
